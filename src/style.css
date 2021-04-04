@@ -1,0 +1,76 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 2px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+  float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+
+.divider {
+  border: 1px solid #e5e5e5;
+}
+
+.box {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+.borderS {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Bunkheng Css */
+
+.display-none {
+  position: absolute;
+  visibility: hidden;
+}
+
+.line-price {
+  background-color: #000000;
+  height: 2px;
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+}
+
+.total-price {
+  margin: 0pt 0pt 20pt 200pt;
+}
+
+
+/* End of Bunkheng Css */

@@ -1,0 +1,240 @@
+* {
+  font-family: 'Cairo', sans-serif;
+}
+#navbarSupportedContent{
+  display: none;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+.main-body {
+  position: relative;
+  z-index: -2;
+}
+
+.head {
+  position: relative;
+  z-index: 2;
+}
+
+.my-container {
+    background-color: #f8f8f8;
+}
+
+.fa-bars {
+  position: relative;
+}
+
+.wide-cate {
+    background-color: #2e2e2e; 
+    color: white;
+    height: 44px;
+}
+
+.wide-cate-1 {
+  background-color: #2e2e2e; 
+  color: white;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+.carousel {
+  position: relative;
+  z-index: -3;
+}
+
+.big-container {
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: 1;
+}
+
+.home-container {
+    color: black;
+    background-color: white ;
+    
+}
+
+.slide {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+  /*menu*/
+ 
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    background-color: #2e2e2e;
+  }
+
+  ul li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+   
+  ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+.categories :hover {
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+  }
+  
+.sub-cate {
+     position: absolute;
+     flex-wrap: wrap;
+     visibility: hidden;
+     transition: 0.5s;
+     left: 0;
+     top: -600%;
+     z-index: -1;
+  }
+  
+  ul li:hover .sub-cate{
+     visibility: visible;
+     top: 100%;
+  }
+
+  .sub-sub-cate {
+    text-align: left;
+    position: absolute;
+    flex-wrap: wrap;
+    visibility: hidden;
+    transition: ease-out 0.2s;
+    transition: ease-in 0.2s;
+    left: 120%;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+
+ }
+ 
+ .sub-cate li:hover .sub-sub-cate{
+    visibility: visible;
+    left: 100%;
+    
+ }
+
+ .page-num {
+   padding-top: 10px;
+   margin: auto;
+   padding: auto;
+ }
+
+ .brand-tag {
+   margin-top: 20px;
+   height: 60px;
+   background-color: #2e2e2e;
+ }
+
+ .brand-div {
+   color: white;
+   padding: 2px;
+   font-size: 2rem;
+ }
+
+ .keychron {
+   margin-top: -13px;
+   margin-left: -20px;
+ }
+
+ .seperator
+{
+    border-bottom:1px solid #e2e2e2;
+}
+
+
+.text-logo {
+  font-family: 'Bangers', cursive;
+}
+
+.collapse {
+ visibility: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  
+
+.call, .nav1, .nav2, .nav3 {
+  display: none;
+}
+
+  .nav0 {
+    float: left;
+    width: 180px;
+  }
+
+.logo1 {
+  width: 30%;
+}
+
+.logo2 {
+  width: 45%;
+}
+
+.logo3 {
+ width: 35%;
+}
+
+.item-title {
+  padding-top: 15px;
+}
+
+.collapse, .call {
+  visibility: visible; 
+ }
+
+.navbar-nav :hover {
+  text-decoration: none;
+  color: rgb(175, 175, 175);
+}
+
+
+.wide-cate-1 {
+  background-color: #2e2e2e; 
+  color: white;
+  height: 100px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+}
