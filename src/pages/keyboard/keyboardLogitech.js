@@ -12,7 +12,7 @@ class keyboardLogitech extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/keyboardLogitech')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db2/keyboardLogitech')
             .then(res => res.json())
             .then(json => {
                 this.setState({

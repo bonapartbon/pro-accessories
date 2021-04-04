@@ -12,7 +12,7 @@ class keyboardHyperX extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/keyboardHyperX')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db2/keyboardHyperX')
             .then(res => res.json())
             .then(json => {
                 this.setState({

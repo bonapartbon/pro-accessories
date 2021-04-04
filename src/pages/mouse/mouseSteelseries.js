@@ -11,7 +11,7 @@ class mouseSteelseries extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/mouseSteelseries')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db2/mouseSteelseries')
             .then(res => res.json())
             .then(json => {
                 this.setState({

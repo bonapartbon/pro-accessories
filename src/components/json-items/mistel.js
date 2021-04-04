@@ -12,7 +12,7 @@ class mistel extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/mistel')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db1/mistel')
             .then(res => res.json())
             .then(json => {
                 this.setState({

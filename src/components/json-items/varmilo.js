@@ -12,7 +12,7 @@ class varmilo extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/varmilo')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db1/varmilo')
         .then(res => res.json())
         .then(json => {
             this.setState({

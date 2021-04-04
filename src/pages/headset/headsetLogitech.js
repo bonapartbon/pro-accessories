@@ -12,7 +12,7 @@ class headsetLogitech extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/headsetLogitech')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db3/headsetLogitech')
             .then(res => res.json())
             .then(json => {
                 this.setState({

@@ -11,7 +11,7 @@ class mouseLogitech extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/mouseLogitech')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db2/mouseLogitech')
             .then(res => res.json())
             .then(json => {
                 this.setState({

@@ -12,7 +12,7 @@ class mousepadHyperX extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/mousepadHyperX')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db3/mousepadHyperX')
             .then(res => res.json())
             .then(json => {
                 this.setState({

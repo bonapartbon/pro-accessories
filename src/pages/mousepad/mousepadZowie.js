@@ -12,7 +12,7 @@ class mousepadZowie extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/mousepadZowie')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db3/mousepadZowie')
             .then(res => res.json())
             .then(json => {
                 this.setState({

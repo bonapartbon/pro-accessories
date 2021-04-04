@@ -12,7 +12,7 @@ class headsetHyperX extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/headsetHyperX')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db3/headsetHyperX')
             .then(res => res.json())
             .then(json => {
                 this.setState({

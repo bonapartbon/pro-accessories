@@ -12,7 +12,7 @@ class zowie extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/zowie')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db1/zowie')
         .then(res => res.json())
         .then(json => {
             this.setState({

@@ -12,7 +12,7 @@ class leopold extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/leopold')
+        fetch('https://my-json-server.typicode.com/bonapartbon/db1/leopold')
             .then(res => res.json())
             .then(json => {
                 this.setState({
