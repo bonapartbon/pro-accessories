@@ -12,7 +12,7 @@ class logitech extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/logitech')
+        fetch('https://my-json-server.typicode.com/bonapartbon/pro-accessories/logitech')
             .then(res => res.json())
             .then(json => {
                 this.setState({

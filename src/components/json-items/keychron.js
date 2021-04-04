@@ -12,7 +12,7 @@ class keychron extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/keychron')
+        fetch('https://my-json-server.typicode.com/bonapartbon/pro-accessories/keychron')
         .then(res => res.json())
         .then(json => {
             this.setState({

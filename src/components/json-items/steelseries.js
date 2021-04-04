@@ -12,7 +12,7 @@ class steelseries extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/steelseries')
+        fetch('https://my-json-server.typicode.com/bonapartbon/pro-accessories/steelseries')
         .then(res => res.json())
         .then(json => {
             this.setState({

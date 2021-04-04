@@ -11,7 +11,7 @@ class akko extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/akko')
+        fetch('https://my-json-server.typicode.com/bonapartbon/pro-accessories/akko')
             .then(res => res.json())
             .then(json => {
                 this.setState({

@@ -12,7 +12,7 @@ class hyperx extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3030/hyper-x')
+        fetch('https://my-json-server.typicode.com/bonapartbon/pro-accessories/hyper-x')
         .then(res => res.json())
         .then(json => {
             this.setState({
