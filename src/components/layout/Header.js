@@ -6,36 +6,35 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-<div className="my-container head">
-        <nav className="navbar navbar-expand-md navbar-light container ">
-          <div className="logo-text col-4">
-            <Link to="/"><div className="navbar-brand text-logo" style={{ fontSize: "30px" }} >Pro Accessories</div></Link>
-          </div>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item active">
-                <Link to="/">Home <span className="sr-only">(current)</span></Link>
-              </li>
-              <li className="nav-item">
-              <Link to="/contact">Contact</Link>
-              </li>
-              <li className="nav-item">
-              <Link to="/about">About</Link>
-              </li>
-              
-            </ul>
-          </div>
+        <div className="my-container head">
+          <nav className="navbar navbar-expand-md navbar-light container ">
+            <div className="logo-text col-4">
+              <Link to="/"><div className="navbar-brand text-logo" style={{ fontSize: "30px" }} >Pro Accessories</div></Link>
+            </div>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item active">
+                  <Link to="/">Home <span className="sr-only">(current)</span></Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/about">About</Link>
+                </li>
+                <li className="nav-item">
+                <a href="tel:+855 96 393 3332" >Call Us</a>
+                </li>
+              </ul>
+            </div>
 
-          <div className="col-4 text-right call">
-            <h5><b>Call Us: 096 393 3332</b></h5>
-          </div>
-
+            <div className="col-4 text-right call">
+              <h5 ><a href="tel:+855 96 393 3332" className="phone"><b> Call Us: 096 39 3332</b></a></h5>
+            </div>
 
 
-        </nav>
+
+          </nav>
         </div>
 
         <div className="big-container">
@@ -44,7 +43,7 @@ class Header extends React.Component {
           <div className="container-fluid wide-cate">
             <div className="container">
               <ul className="categories">
-                <li><a href="#"><i className="fas fa-bars mr-2"></i> CATEGORIES </a>
+                <li className="catego"><a href="#"><i className="fas fa-bars mr-2"></i> CATEGORIES </a>
                   <ul className="sub-cate">
                     <li><a href="#">GAMING MOUSE<i className="fas fa-chevron-right pt-1 float-right"></i></a>
                       <ul className="sub-sub-cate">
@@ -81,10 +80,8 @@ class Header extends React.Component {
                   </ul>
                 </li>
                 <li className="nav1"><Link to="/">HOME</Link></li>
-                <li className="nav2"><Link to="/contact">CONTACT</Link></li>
                 <li className="nav3"><Link to="/about">ABOUT</Link></li>
-                <li><Link to="/cart"> CART <i className="fas fa-shopping-cart ml-1"></i></Link></li>
-
+                
               </ul>
             </div>
           </div>

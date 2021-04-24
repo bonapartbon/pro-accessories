@@ -21,11 +21,8 @@ import headsetHyperX from "./pages/headset/headsetHyperX";
 import mousepadSteelseries from "./pages/mousepad/mousepadSteelseries";
 import mousepadZowie from "./pages/mousepad/mousepadZowie";
 import mousepadHyperX from "./pages/mousepad/mousepadHyperX";
-import Contact from "./pages/Contact";
 import About from "./pages/About";
 import ItemDetail from "./itemDetail";
-import Cart from "./views/Cart";
-import CartDetail from "./views/CartDetail";
 
 
 
@@ -36,9 +33,6 @@ const App = () => {
         <Header />
         <Switch>
           <Route path="/" exact component={Body}/>
-          <Route path="/cart/:id" exact component={CartDetail}/>
-          <Route path="/cart" component={Cart}/>
-          <Route path="/contact" component={Contact}/>
           <Route path="/about" component={About}/>
 
           <Route path="/mouse/logitech" component={mouseLogitech}/>
@@ -58,7 +52,6 @@ const App = () => {
           <Route path="/mousepad/zowie" component={mousepadZowie}/>
           <Route path="/mousepad/hyperx" component={mousepadHyperX}/>
           <Route path="/mousepad/hyperx" component={mousepadHyperX}/>
-          <Route path="/shop/:id" component={ItemDetail}/>
           <Route path="*"  component={NotFound}/>
 
 
